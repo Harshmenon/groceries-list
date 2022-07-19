@@ -1,0 +1,14 @@
+groceries = ['cheese','bread','pasta','sauce','eggs','potato','tomato','lettuce','dog food','sausages','chicken','chips','coca cola','biscuits']
+cost = ['₹100','₹40','₹210','₹120','₹90','₹50','₹60','₹30','₹150','₹110','₹250','₹40','₹80','₹35']
+print('enter a grocery item')
+i = input()
+if i in groceries:
+    print('available in stock')
+    n = groceries.index(i)
+    #groceries index returns the index number of the input 
+    print('item present at index number',n)
+    print(cost[n])  #this line is resposible for  printing the  cost and the item
+else:
+    print('out of stock')
+
+
